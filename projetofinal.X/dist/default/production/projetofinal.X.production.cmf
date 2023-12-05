@@ -1,0 +1,474 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta> <reloc>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$dist/default/production\projetofinal.X.production.o
+cinit CODE 0 F F 2A 2 1
+text1 CODE 0 236 236 16 2 1
+text2 CODE 0 24C 24C 11 2 1
+text3 CODE 0 215 215 21 2 1
+text4 CODE 0 1C6 1C6 4F 2 1
+maintext CODE 0 39 39 18D 2 1
+cstackCOMMON COMMON 1 70 70 6 1 1
+cstackBANK0 BANK0 1 2A 2A 6 1 1
+intentry CODE 0 4 4 8 2 1
+bssBANK0 BANK0 1 20 20 A 1 1
+idataBANK0 CODE 0 25D 25D 4 2 1
+dataBANK0 BANK0 1 30 30 4 1 1
+bssCOMMON COMMON 1 76 76 4 1 1
+config CONFIG 4 2007 2007 1 2 1
+$C:\Users\alice\AppData\Local\Temp\xcAsihs.\driver_tmp_12.o
+reset_vec CODE 0 0 0 3 2 1
+end_init CODE 0 C C 3 2 1
+config CONFIG 4 2007 2007 1 2 1
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM 34-6F 1
+RAM A0-EF 1
+RAM 110-16F 1
+RAM 190-1EF 1
+BANK0 34-6F 1
+BANK1 A0-EF 1
+BANK2 110-16F 1
+BANK3 190-1EF 1
+CONST 3-3 2
+CONST 261-1FFF 2
+ENTRY 3-3 2
+ENTRY 261-1FFF 2
+IDLOC 2000-2003 2
+CODE 3-3 2
+CODE 261-1FFF 2
+SFR0 0-1F 1
+SFR1 80-9F 1
+SFR2 100-10F 1
+SFR3 180-18F 1
+COMMON 7A-7D 1
+EEDATA 2100-21FF 2
+STRCODE 3-3 2
+STRCODE 261-1FFF 2
+STRING 3-3 2
+STRING 261-1FFF 2
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$dist/default/production\projetofinal.X.production.o
+F cinit CODE >461:C:\Users\alice\AppData\Local\Temp\xcAsihs.\driver_tmp_1.s
+F cinit CODE >464:C:\Users\alice\AppData\Local\Temp\xcAsihs.\driver_tmp_1.s
+F cinit CODE >511:C:\Users\alice\AppData\Local\Temp\xcAsihs.\driver_tmp_1.s
+14 cinit CODE >512:C:\Users\alice\AppData\Local\Temp\xcAsihs.\driver_tmp_1.s
+15 cinit CODE >513:C:\Users\alice\AppData\Local\Temp\xcAsihs.\driver_tmp_1.s
+1A cinit CODE >514:C:\Users\alice\AppData\Local\Temp\xcAsihs.\driver_tmp_1.s
+1B cinit CODE >515:C:\Users\alice\AppData\Local\Temp\xcAsihs.\driver_tmp_1.s
+20 cinit CODE >516:C:\Users\alice\AppData\Local\Temp\xcAsihs.\driver_tmp_1.s
+21 cinit CODE >517:C:\Users\alice\AppData\Local\Temp\xcAsihs.\driver_tmp_1.s
+26 cinit CODE >518:C:\Users\alice\AppData\Local\Temp\xcAsihs.\driver_tmp_1.s
+27 cinit CODE >522:C:\Users\alice\AppData\Local\Temp\xcAsihs.\driver_tmp_1.s
+28 cinit CODE >523:C:\Users\alice\AppData\Local\Temp\xcAsihs.\driver_tmp_1.s
+29 cinit CODE >524:C:\Users\alice\AppData\Local\Temp\xcAsihs.\driver_tmp_1.s
+2A cinit CODE >525:C:\Users\alice\AppData\Local\Temp\xcAsihs.\driver_tmp_1.s
+2B cinit CODE >526:C:\Users\alice\AppData\Local\Temp\xcAsihs.\driver_tmp_1.s
+2C cinit CODE >527:C:\Users\alice\AppData\Local\Temp\xcAsihs.\driver_tmp_1.s
+2D cinit CODE >528:C:\Users\alice\AppData\Local\Temp\xcAsihs.\driver_tmp_1.s
+2E cinit CODE >529:C:\Users\alice\AppData\Local\Temp\xcAsihs.\driver_tmp_1.s
+2F cinit CODE >530:C:\Users\alice\AppData\Local\Temp\xcAsihs.\driver_tmp_1.s
+30 cinit CODE >531:C:\Users\alice\AppData\Local\Temp\xcAsihs.\driver_tmp_1.s
+31 cinit CODE >534:C:\Users\alice\AppData\Local\Temp\xcAsihs.\driver_tmp_1.s
+32 cinit CODE >535:C:\Users\alice\AppData\Local\Temp\xcAsihs.\driver_tmp_1.s
+33 cinit CODE >536:C:\Users\alice\AppData\Local\Temp\xcAsihs.\driver_tmp_1.s
+34 cinit CODE >537:C:\Users\alice\AppData\Local\Temp\xcAsihs.\driver_tmp_1.s
+35 cinit CODE >543:C:\Users\alice\AppData\Local\Temp\xcAsihs.\driver_tmp_1.s
+35 cinit CODE >545:C:\Users\alice\AppData\Local\Temp\xcAsihs.\driver_tmp_1.s
+36 cinit CODE >546:C:\Users\alice\AppData\Local\Temp\xcAsihs.\driver_tmp_1.s
+4 intentry CODE >67:C:\Users\alice\MPLABXProjects\projetofinal.X\main.c
+1C6 text4 CODE >67:C:\Users\alice\MPLABXProjects\projetofinal.X\main.c
+1C6 text4 CODE >69:C:\Users\alice\MPLABXProjects\projetofinal.X\main.c
+1CC text4 CODE >70:C:\Users\alice\MPLABXProjects\projetofinal.X\main.c
+1CE text4 CODE >70:C:\Users\alice\MPLABXProjects\projetofinal.X\main.c
+1D2 text4 CODE >71:C:\Users\alice\MPLABXProjects\projetofinal.X\main.c
+1D8 text4 CODE >72:C:\Users\alice\MPLABXProjects\projetofinal.X\main.c
+1E6 text4 CODE >73:C:\Users\alice\MPLABXProjects\projetofinal.X\main.c
+1EC text4 CODE >74:C:\Users\alice\MPLABXProjects\projetofinal.X\main.c
+1F6 text4 CODE >76:C:\Users\alice\MPLABXProjects\projetofinal.X\main.c
+1FC text4 CODE >77:C:\Users\alice\MPLABXProjects\projetofinal.X\main.c
+206 text4 CODE >79:C:\Users\alice\MPLABXProjects\projetofinal.X\main.c
+208 text4 CODE >80:C:\Users\alice\MPLABXProjects\projetofinal.X\main.c
+209 text4 CODE >81:C:\Users\alice\MPLABXProjects\projetofinal.X\main.c
+20B text4 CODE >82:C:\Users\alice\MPLABXProjects\projetofinal.X\main.c
+20D text4 CODE >84:C:\Users\alice\MPLABXProjects\projetofinal.X\main.c
+20E text4 CODE >86:C:\Users\alice\MPLABXProjects\projetofinal.X\main.c
+215 text3 CODE >264:C:\Users\alice\MPLABXProjects\projetofinal.X\main.c
+215 text3 CODE >267:C:\Users\alice\MPLABXProjects\projetofinal.X\main.c
+218 text3 CODE >267:C:\Users\alice\MPLABXProjects\projetofinal.X\main.c
+21A text3 CODE >267:C:\Users\alice\MPLABXProjects\projetofinal.X\main.c
+21E text3 CODE >269:C:\Users\alice\MPLABXProjects\projetofinal.X\main.c
+228 text3 CODE >270:C:\Users\alice\MPLABXProjects\projetofinal.X\main.c
+229 text3 CODE >271:C:\Users\alice\MPLABXProjects\projetofinal.X\main.c
+22D text3 CODE >271:C:\Users\alice\MPLABXProjects\projetofinal.X\main.c
+230 text3 CODE >271:C:\Users\alice\MPLABXProjects\projetofinal.X\main.c
+235 text3 CODE >273:C:\Users\alice\MPLABXProjects\projetofinal.X\main.c
+24C text2 CODE >40:C:\Users\alice\MPLABXProjects\projetofinal.X\main.c
+24C text2 CODE >42:C:\Users\alice\MPLABXProjects\projetofinal.X\main.c
+250 text2 CODE >43:C:\Users\alice\MPLABXProjects\projetofinal.X\main.c
+251 text2 CODE >44:C:\Users\alice\MPLABXProjects\projetofinal.X\main.c
+253 text2 CODE >45:C:\Users\alice\MPLABXProjects\projetofinal.X\main.c
+254 text2 CODE >46:C:\Users\alice\MPLABXProjects\projetofinal.X\main.c
+257 text2 CODE >47:C:\Users\alice\MPLABXProjects\projetofinal.X\main.c
+259 text2 CODE >48:C:\Users\alice\MPLABXProjects\projetofinal.X\main.c
+25C text2 CODE >49:C:\Users\alice\MPLABXProjects\projetofinal.X\main.c
+236 text1 CODE >52:C:\Users\alice\MPLABXProjects\projetofinal.X\main.c
+236 text1 CODE >53:C:\Users\alice\MPLABXProjects\projetofinal.X\main.c
+23A text1 CODE >54:C:\Users\alice\MPLABXProjects\projetofinal.X\main.c
+23E text1 CODE >57:C:\Users\alice\MPLABXProjects\projetofinal.X\main.c
+241 text1 CODE >60:C:\Users\alice\MPLABXProjects\projetofinal.X\main.c
+245 text1 CODE >63:C:\Users\alice\MPLABXProjects\projetofinal.X\main.c
+24B text1 CODE >64:C:\Users\alice\MPLABXProjects\projetofinal.X\main.c
+39 maintext CODE >89:C:\Users\alice\MPLABXProjects\projetofinal.X\main.c
+39 maintext CODE >90:C:\Users\alice\MPLABXProjects\projetofinal.X\main.c
+3E maintext CODE >94:C:\Users\alice\MPLABXProjects\projetofinal.X\main.c
+3F maintext CODE >95:C:\Users\alice\MPLABXProjects\projetofinal.X\main.c
+40 maintext CODE >96:C:\Users\alice\MPLABXProjects\projetofinal.X\main.c
+43 maintext CODE >99:C:\Users\alice\MPLABXProjects\projetofinal.X\main.c
+46 maintext CODE >100:C:\Users\alice\MPLABXProjects\projetofinal.X\main.c
+47 maintext CODE >101:C:\Users\alice\MPLABXProjects\projetofinal.X\main.c
+48 maintext CODE >103:C:\Users\alice\MPLABXProjects\projetofinal.X\main.c
+4A maintext CODE >104:C:\Users\alice\MPLABXProjects\projetofinal.X\main.c
+4C maintext CODE >106:C:\Users\alice\MPLABXProjects\projetofinal.X\main.c
+4D maintext CODE >109:C:\Users\alice\MPLABXProjects\projetofinal.X\main.c
+4E maintext CODE >110:C:\Users\alice\MPLABXProjects\projetofinal.X\main.c
+4F maintext CODE >113:C:\Users\alice\MPLABXProjects\projetofinal.X\main.c
+50 maintext CODE >114:C:\Users\alice\MPLABXProjects\projetofinal.X\main.c
+51 maintext CODE >115:C:\Users\alice\MPLABXProjects\projetofinal.X\main.c
+54 maintext CODE >117:C:\Users\alice\MPLABXProjects\projetofinal.X\main.c
+56 maintext CODE >119:C:\Users\alice\MPLABXProjects\projetofinal.X\main.c
+59 maintext CODE >120:C:\Users\alice\MPLABXProjects\projetofinal.X\main.c
+5A maintext CODE >122:C:\Users\alice\MPLABXProjects\projetofinal.X\main.c
+5B maintext CODE >124:C:\Users\alice\MPLABXProjects\projetofinal.X\main.c
+5C maintext CODE >130:C:\Users\alice\MPLABXProjects\projetofinal.X\main.c
+67 maintext CODE >133:C:\Users\alice\MPLABXProjects\projetofinal.X\main.c
+6B maintext CODE >134:C:\Users\alice\MPLABXProjects\projetofinal.X\main.c
+76 maintext CODE >135:C:\Users\alice\MPLABXProjects\projetofinal.X\main.c
+7A maintext CODE >136:C:\Users\alice\MPLABXProjects\projetofinal.X\main.c
+7C maintext CODE >139:C:\Users\alice\MPLABXProjects\projetofinal.X\main.c
+88 maintext CODE >140:C:\Users\alice\MPLABXProjects\projetofinal.X\main.c
+8C maintext CODE >141:C:\Users\alice\MPLABXProjects\projetofinal.X\main.c
+8E maintext CODE >142:C:\Users\alice\MPLABXProjects\projetofinal.X\main.c
+96 maintext CODE >143:C:\Users\alice\MPLABXProjects\projetofinal.X\main.c
+99 maintext CODE >144:C:\Users\alice\MPLABXProjects\projetofinal.X\main.c
+9A maintext CODE >145:C:\Users\alice\MPLABXProjects\projetofinal.X\main.c
+9C maintext CODE >146:C:\Users\alice\MPLABXProjects\projetofinal.X\main.c
+9E maintext CODE >147:C:\Users\alice\MPLABXProjects\projetofinal.X\main.c
+A0 maintext CODE >149:C:\Users\alice\MPLABXProjects\projetofinal.X\main.c
+A4 maintext CODE >150:C:\Users\alice\MPLABXProjects\projetofinal.X\main.c
+A8 maintext CODE >151:C:\Users\alice\MPLABXProjects\projetofinal.X\main.c
+B1 maintext CODE >153:C:\Users\alice\MPLABXProjects\projetofinal.X\main.c
+BF maintext CODE >154:C:\Users\alice\MPLABXProjects\projetofinal.X\main.c
+C3 maintext CODE >155:C:\Users\alice\MPLABXProjects\projetofinal.X\main.c
+C5 maintext CODE >156:C:\Users\alice\MPLABXProjects\projetofinal.X\main.c
+CD maintext CODE >157:C:\Users\alice\MPLABXProjects\projetofinal.X\main.c
+D0 maintext CODE >158:C:\Users\alice\MPLABXProjects\projetofinal.X\main.c
+D1 maintext CODE >159:C:\Users\alice\MPLABXProjects\projetofinal.X\main.c
+D5 maintext CODE >160:C:\Users\alice\MPLABXProjects\projetofinal.X\main.c
+D7 maintext CODE >161:C:\Users\alice\MPLABXProjects\projetofinal.X\main.c
+D9 maintext CODE >166:C:\Users\alice\MPLABXProjects\projetofinal.X\main.c
+DF maintext CODE >167:C:\Users\alice\MPLABXProjects\projetofinal.X\main.c
+E0 maintext CODE >168:C:\Users\alice\MPLABXProjects\projetofinal.X\main.c
+E1 maintext CODE >171:C:\Users\alice\MPLABXProjects\projetofinal.X\main.c
+E7 maintext CODE >172:C:\Users\alice\MPLABXProjects\projetofinal.X\main.c
+E8 maintext CODE >173:C:\Users\alice\MPLABXProjects\projetofinal.X\main.c
+E9 maintext CODE >176:C:\Users\alice\MPLABXProjects\projetofinal.X\main.c
+F5 maintext CODE >177:C:\Users\alice\MPLABXProjects\projetofinal.X\main.c
+F6 maintext CODE >180:C:\Users\alice\MPLABXProjects\projetofinal.X\main.c
+102 maintext CODE >181:C:\Users\alice\MPLABXProjects\projetofinal.X\main.c
+103 maintext CODE >184:C:\Users\alice\MPLABXProjects\projetofinal.X\main.c
+109 maintext CODE >188:C:\Users\alice\MPLABXProjects\projetofinal.X\main.c
+10E maintext CODE >188:C:\Users\alice\MPLABXProjects\projetofinal.X\main.c
+112 maintext CODE >188:C:\Users\alice\MPLABXProjects\projetofinal.X\main.c
+124 maintext CODE >190:C:\Users\alice\MPLABXProjects\projetofinal.X\main.c
+125 maintext CODE >191:C:\Users\alice\MPLABXProjects\projetofinal.X\main.c
+126 maintext CODE >193:C:\Users\alice\MPLABXProjects\projetofinal.X\main.c
+12C maintext CODE >194:C:\Users\alice\MPLABXProjects\projetofinal.X\main.c
+135 maintext CODE >195:C:\Users\alice\MPLABXProjects\projetofinal.X\main.c
+136 maintext CODE >196:C:\Users\alice\MPLABXProjects\projetofinal.X\main.c
+13F maintext CODE >199:C:\Users\alice\MPLABXProjects\projetofinal.X\main.c
+143 maintext CODE >200:C:\Users\alice\MPLABXProjects\projetofinal.X\main.c
+145 maintext CODE >201:C:\Users\alice\MPLABXProjects\projetofinal.X\main.c
+149 maintext CODE >202:C:\Users\alice\MPLABXProjects\projetofinal.X\main.c
+14B maintext CODE >203:C:\Users\alice\MPLABXProjects\projetofinal.X\main.c
+14C maintext CODE >205:C:\Users\alice\MPLABXProjects\projetofinal.X\main.c
+153 maintext CODE >205:C:\Users\alice\MPLABXProjects\projetofinal.X\main.c
+157 maintext CODE >205:C:\Users\alice\MPLABXProjects\projetofinal.X\main.c
+169 maintext CODE >207:C:\Users\alice\MPLABXProjects\projetofinal.X\main.c
+16A maintext CODE >208:C:\Users\alice\MPLABXProjects\projetofinal.X\main.c
+16B maintext CODE >210:C:\Users\alice\MPLABXProjects\projetofinal.X\main.c
+171 maintext CODE >211:C:\Users\alice\MPLABXProjects\projetofinal.X\main.c
+17A maintext CODE >212:C:\Users\alice\MPLABXProjects\projetofinal.X\main.c
+17B maintext CODE >213:C:\Users\alice\MPLABXProjects\projetofinal.X\main.c
+184 maintext CODE >216:C:\Users\alice\MPLABXProjects\projetofinal.X\main.c
+188 maintext CODE >217:C:\Users\alice\MPLABXProjects\projetofinal.X\main.c
+18A maintext CODE >218:C:\Users\alice\MPLABXProjects\projetofinal.X\main.c
+18E maintext CODE >219:C:\Users\alice\MPLABXProjects\projetofinal.X\main.c
+191 maintext CODE >222:C:\Users\alice\MPLABXProjects\projetofinal.X\main.c
+191 maintext CODE >225:C:\Users\alice\MPLABXProjects\projetofinal.X\main.c
+19B maintext CODE >227:C:\Users\alice\MPLABXProjects\projetofinal.X\main.c
+19C maintext CODE >228:C:\Users\alice\MPLABXProjects\projetofinal.X\main.c
+19D maintext CODE >230:C:\Users\alice\MPLABXProjects\projetofinal.X\main.c
+1A4 maintext CODE >241:C:\Users\alice\MPLABXProjects\projetofinal.X\main.c
+1AE maintext CODE >243:C:\Users\alice\MPLABXProjects\projetofinal.X\main.c
+1AF maintext CODE >244:C:\Users\alice\MPLABXProjects\projetofinal.X\main.c
+1B0 maintext CODE >246:C:\Users\alice\MPLABXProjects\projetofinal.X\main.c
+1B7 maintext CODE >260:C:\Users\alice\MPLABXProjects\projetofinal.X\main.c
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+___latbits 2 0 ABS 0 - dist/default/production\projetofinal.X.production.o
+__LdataBANK0 0 0 ABS 0 dataBANK0 -
+__Hspace_0 261 0 ABS 0 - -
+__Hspace_1 7A 0 ABS 0 - -
+__Hspace_2 0 0 ABS 0 - -
+__Hspace_3 0 0 ABS 0 - -
+__Hspace_4 400F 0 ABS 0 - -
+__HidataBANK0 0 0 ABS 0 idataBANK0 -
+__end_of_initialize 4BA 0 CODE 0 text2 dist/default/production\projetofinal.X.production.o
+__end_of_readLDR 498 0 CODE 0 text1 dist/default/production\projetofinal.X.production.o
+__Heeprom_data 0 0 EEDATA 3 eeprom_data -
+_T1CONbits 10 0 ABS 0 - dist/default/production\projetofinal.X.production.o
+__L__absolute__ 0 0 ABS 0 __absolute__ -
+__Hstrings 0 0 ABS 0 strings -
+_T0IF 5A 0 ABS 0 - dist/default/production\projetofinal.X.production.o
+___sp 0 0 STACK 2 stack C:\Users\alice\AppData\Local\Temp\xcAsihs.\driver_tmp_12.o
+_main 72 0 CODE 0 maintext dist/default/production\projetofinal.X.production.o
+_meio 26 0 BANK0 1 bssBANK0 dist/default/production\projetofinal.X.production.o
+btemp 7E 0 ABS 0 - dist/default/production\projetofinal.X.production.o
+___stack_hi 0 0 STACK 2 stack C:\Users\alice\AppData\Local\Temp\xcAsihs.\driver_tmp_12.o
+___stack_lo 0 0 STACK 2 stack C:\Users\alice\AppData\Local\Temp\xcAsihs.\driver_tmp_12.o
+PWM1_Set_Duty@DC 74 0 COMMON 1 cstackCOMMON dist/default/production\projetofinal.X.production.o
+start 18 0 CODE 0 init C:\Users\alice\AppData\Local\Temp\xcAsihs.\driver_tmp_12.o
+__HbssCOMMON 0 0 ABS 0 bssCOMMON -
+_OPTION_REGbits 81 0 ABS 0 - dist/default/production\projetofinal.X.production.o
+__LidataBANK0 0 0 ABS 0 idataBANK0 -
+__Hpowerup 0 0 CODE 0 powerup -
+main@ldrValue 2E 0 BANK0 1 cstackBANK0 dist/default/production\projetofinal.X.production.o
+intlevel0 0 0 ENTRY 0 functab C:\Users\alice\AppData\Local\Temp\xcAsihs.\driver_tmp_12.o
+intlevel1 0 0 ENTRY 0 functab C:\Users\alice\AppData\Local\Temp\xcAsihs.\driver_tmp_12.o
+intlevel2 0 0 ENTRY 0 functab C:\Users\alice\AppData\Local\Temp\xcAsihs.\driver_tmp_12.o
+intlevel3 0 0 ENTRY 0 functab C:\Users\alice\AppData\Local\Temp\xcAsihs.\driver_tmp_12.o
+intlevel4 0 0 ENTRY 0 functab C:\Users\alice\AppData\Local\Temp\xcAsihs.\driver_tmp_12.o
+intlevel5 0 0 ENTRY 0 functab C:\Users\alice\AppData\Local\Temp\xcAsihs.\driver_tmp_12.o
+__LbssCOMMON 0 0 ABS 0 bssCOMMON -
+wtemp0 7E 0 ABS 0 - dist/default/production\projetofinal.X.production.o
+_ledState 76 0 COMMON 1 bssCOMMON dist/default/production\projetofinal.X.production.o
+__Hfunctab 0 0 ENTRY 0 functab -
+__Hclrtext 0 0 ABS 0 clrtext -
+_ADCON0 1F 0 ABS 0 - dist/default/production\projetofinal.X.production.o
+_ADCON1 9F 0 ABS 0 - dist/default/production\projetofinal.X.production.o
+_ADRESH 1E 0 ABS 0 - dist/default/production\projetofinal.X.production.o
+_ADRESL 9E 0 ABS 0 - dist/default/production\projetofinal.X.production.o
+_CCP1M2 BA 0 ABS 0 - dist/default/production\projetofinal.X.production.o
+_CCP1M3 BB 0 ABS 0 - dist/default/production\projetofinal.X.production.o
+_CCPR1L 15 0 ABS 0 - dist/default/production\projetofinal.X.production.o
+__Lmaintext 0 0 ABS 0 maintext -
+___stackhi 0 0 ABS 0 - C:\Users\alice\AppData\Local\Temp\xcAsihs.\driver_tmp_12.o
+___stacklo 0 0 ABS 0 - C:\Users\alice\AppData\Local\Temp\xcAsihs.\driver_tmp_12.o
+start_initialization 1E 0 CODE 0 cinit dist/default/production\projetofinal.X.production.o
+_GO_nDONE FA 0 ABS 0 - dist/default/production\projetofinal.X.production.o
+__pcstackBANK0 2A 0 BANK0 1 cstackBANK0 dist/default/production\projetofinal.X.production.o
+_TMR1IF 60 0 ABS 0 - dist/default/production\projetofinal.X.production.o
+_TMR2ON 92 0 ABS 0 - dist/default/production\projetofinal.X.production.o
+_TRISC2 43A 0 ABS 0 - dist/default/production\projetofinal.X.production.o
+_readLDR 46C 0 CODE 0 text1 dist/default/production\projetofinal.X.production.o
+___int_sp 0 0 STACK 2 stack C:\Users\alice\AppData\Local\Temp\xcAsihs.\driver_tmp_12.o
+__Hbank0 0 0 ABS 0 bank0 -
+__Hbank1 0 0 ABS 0 bank1 -
+__Hbank2 0 0 ABS 0 bank2 -
+__Hbank3 0 0 ABS 0 bank3 -
+__Hcinit 72 0 CODE 0 cinit -
+__Hstack 0 0 STACK 2 stack -
+__Hmaintext 0 0 ABS 0 maintext -
+__Hcommon 0 0 ABS 0 common -
+__Hconfig 4010 0 CONFIG 4 config -
+__Lbank0 0 0 ABS 0 bank0 -
+__Lbank1 0 0 ABS 0 bank1 -
+__Lbank2 0 0 ABS 0 bank2 -
+__Lbank3 0 0 ABS 0 bank3 -
+__Lcinit 1E 0 CODE 0 cinit -
+__Lstack 0 0 STACK 2 stack -
+_INTCONbits B 0 ABS 0 - dist/default/production\projetofinal.X.production.o
+__Habs1 0 0 ABS 0 abs1 -
+__Hcode 0 0 ABS 0 code -
+__Hheap 0 0 HEAP 7 heap -
+__Hinit 18 0 CODE 0 init -
+__Hsfr0 0 0 ABS 0 sfr0 -
+__Hsfr1 0 0 ABS 0 sfr1 -
+__Hsfr2 0 0 ABS 0 sfr2 -
+__Hsfr3 0 0 ABS 0 sfr3 -
+__Htext 0 0 ABS 0 text -
+__Labs1 0 0 ABS 0 abs1 -
+__Lcode 0 0 ABS 0 code -
+__Lheap 0 0 HEAP 7 heap -
+__Linit 18 0 CODE 0 init -
+__Lsfr0 0 0 ABS 0 sfr0 -
+__Lsfr1 0 0 ABS 0 sfr1 -
+__Lsfr2 0 0 ABS 0 sfr2 -
+__Lsfr3 0 0 ABS 0 sfr3 -
+__Ltext 0 0 ABS 0 text -
+__LcstackBANK0 0 0 ABS 0 cstackBANK0 -
+__HcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+_ISR 38C 0 CODE 0 text4 dist/default/production\projetofinal.X.production.o
+_PR2 92 0 ABS 0 - dist/default/production\projetofinal.X.production.o
+_RB0 30 0 ABS 0 - dist/default/production\projetofinal.X.production.o
+_RB1 31 0 ABS 0 - dist/default/production\projetofinal.X.production.o
+_RB3 33 0 ABS 0 - dist/default/production\projetofinal.X.production.o
+_RB5 35 0 ABS 0 - dist/default/production\projetofinal.X.production.o
+_RB6 36 0 ABS 0 - dist/default/production\projetofinal.X.production.o
+_RB7 37 0 ABS 0 - dist/default/production\projetofinal.X.production.o
+_RC0 38 0 ABS 0 - dist/default/production\projetofinal.X.production.o
+_RC1 39 0 ABS 0 - dist/default/production\projetofinal.X.production.o
+_RD5 45 0 ABS 0 - dist/default/production\projetofinal.X.production.o
+_RD6 46 0 ABS 0 - dist/default/production\projetofinal.X.production.o
+_RD7 47 0 ABS 0 - dist/default/production\projetofinal.X.production.o
+__S0 261 0 ABS 0 - -
+__S1 7A 0 ABS 0 - -
+__S3 0 0 ABS 0 - -
+_fim 28 0 BANK0 1 bssBANK0 dist/default/production\projetofinal.X.production.o
+_aberta 30 0 BANK0 1 dataBANK0 dist/default/production\projetofinal.X.production.o
+saved_w 7E 0 ABS 0 - dist/default/production\projetofinal.X.production.o
+?_readLDR 74 0 COMMON 1 cstackCOMMON dist/default/production\projetofinal.X.production.o
+_manualControl 20 0 BANK0 1 bssBANK0 dist/default/production\projetofinal.X.production.o
+__end_of_ISR 42A 0 CODE 0 text4 dist/default/production\projetofinal.X.production.o
+__Lintentry 8 0 CODE 0 intentry -
+reset_vec 0 0 CODE 0 reset_vec C:\Users\alice\AppData\Local\Temp\xcAsihs.\driver_tmp_12.o
+_inicio 32 0 BANK0 1 dataBANK0 dist/default/production\projetofinal.X.production.o
+__pdataBANK0 30 0 BANK0 1 dataBANK0 dist/default/production\projetofinal.X.production.o
+__LbssBANK0 0 0 ABS 0 bssBANK0 -
+_opening 24 0 BANK0 1 bssBANK0 dist/default/production\projetofinal.X.production.o
+_PIE1bits 8C 0 ABS 0 - dist/default/production\projetofinal.X.production.o
+__pmaintext 72 0 CODE 0 maintext dist/default/production\projetofinal.X.production.o
+__Lcommon 0 0 ABS 0 common -
+__Lconfig 0 0 CONFIG 4 config -
+_PWM1_Set_Duty 42A 0 CODE 0 text3 dist/default/production\projetofinal.X.production.o
+__Lspace_0 0 0 ABS 0 - -
+__Lspace_1 0 0 ABS 0 - -
+__Lspace_2 0 0 ABS 0 - -
+__Lspace_3 0 0 ABS 0 - -
+__Lspace_4 0 0 ABS 0 - -
+__pbssCOMMON 76 0 COMMON 1 bssCOMMON dist/default/production\projetofinal.X.production.o
+__HcstackBANK0 0 0 ABS 0 cstackBANK0 -
+_PIR1bits C 0 ABS 0 - dist/default/production\projetofinal.X.production.o
+__Lend_init 18 0 CODE 0 end_init -
+__LcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+end_of_initialization 6A 0 CODE 0 cinit dist/default/production\projetofinal.X.production.o
+__Hintentry 18 0 CODE 0 intentry -
+__Lstrings 0 0 ABS 0 strings -
+__Hreset_vec 6 0 CODE 0 reset_vec -
+__HbssBANK0 0 0 ABS 0 bssBANK0 -
+__ptext1 46C 0 CODE 0 text1 dist/default/production\projetofinal.X.production.o
+__ptext2 498 0 CODE 0 text2 dist/default/production\projetofinal.X.production.o
+__ptext3 42A 0 CODE 0 text3 dist/default/production\projetofinal.X.production.o
+__ptext4 38C 0 CODE 0 text4 dist/default/production\projetofinal.X.production.o
+__Lpowerup 0 0 CODE 0 powerup -
+__Leeprom_data 0 0 EEDATA 3 eeprom_data -
+__H__absolute__ 0 0 ABS 0 __absolute__ -
+__Lreset_vec 0 0 CODE 0 reset_vec -
+___heap_hi 0 0 ABS 0 - C:\Users\alice\AppData\Local\Temp\xcAsihs.\driver_tmp_12.o
+___heap_lo 0 0 ABS 0 - C:\Users\alice\AppData\Local\Temp\xcAsihs.\driver_tmp_12.o
+_timerCounter 78 0 COMMON 1 bssCOMMON dist/default/production\projetofinal.X.production.o
+__end_of__initialization 6A 0 CODE 0 cinit dist/default/production\projetofinal.X.production.o
+__Lfunctab 0 0 ENTRY 0 functab -
+__pidataBANK0 4BA 0 CODE 0 idataBANK0 dist/default/production\projetofinal.X.production.o
+__Lclrtext 0 0 ABS 0 clrtext -
+__pcstackCOMMON 70 0 COMMON 1 cstackCOMMON dist/default/production\projetofinal.X.production.o
+_initialize 498 0 CODE 0 text2 dist/default/production\projetofinal.X.production.o
+_T2CKPS0 90 0 ABS 0 - dist/default/production\projetofinal.X.production.o
+_T2CKPS1 91 0 ABS 0 - dist/default/production\projetofinal.X.production.o
+__Hend_init 1E 0 CODE 0 end_init -
+__end_of_main 38C 0 CODE 0 maintext dist/default/production\projetofinal.X.production.o
+_CCP1X BD 0 ABS 0 - dist/default/production\projetofinal.X.production.o
+_CCP1Y BC 0 ABS 0 - dist/default/production\projetofinal.X.production.o
+__end_of_PWM1_Set_Duty 46C 0 CODE 0 text3 dist/default/production\projetofinal.X.production.o
+_PORTC 7 0 ABS 0 - dist/default/production\projetofinal.X.production.o
+_PORTD 8 0 ABS 0 - dist/default/production\projetofinal.X.production.o
+_TMR1H F 0 ABS 0 - dist/default/production\projetofinal.X.production.o
+_TMR1L E 0 ABS 0 - dist/default/production\projetofinal.X.production.o
+_TRISA 85 0 ABS 0 - dist/default/production\projetofinal.X.production.o
+_TRISB 86 0 ABS 0 - dist/default/production\projetofinal.X.production.o
+_TRISC 87 0 ABS 0 - dist/default/production\projetofinal.X.production.o
+_TRISD 88 0 ABS 0 - dist/default/production\projetofinal.X.production.o
+__Hram 0 0 ABS 0 ram -
+__Lram 0 0 ABS 0 ram -
+interrupt_function 8 0 CODE 0 intentry dist/default/production\projetofinal.X.production.o
+__pintentry 8 0 CODE 0 intentry dist/default/production\projetofinal.X.production.o
+_closing 22 0 BANK0 1 bssBANK0 dist/default/production\projetofinal.X.production.o
+__HdataBANK0 0 0 ABS 0 dataBANK0 -
+__initialization 1E 0 CODE 0 cinit dist/default/production\projetofinal.X.production.o
+__pbssBANK0 20 0 BANK0 1 bssBANK0 dist/default/production\projetofinal.X.production.o
+___int_stack_hi 0 0 STACK 2 stack C:\Users\alice\AppData\Local\Temp\xcAsihs.\driver_tmp_12.o
+___int_stack_lo 0 0 STACK 2 stack C:\Users\alice\AppData\Local\Temp\xcAsihs.\driver_tmp_12.o
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+- 1 7E 2
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+cstackCOMMON 1 70 70 A 1
+intentry 0 4 8 25D 2
+reset_vec 0 0 0 3 2
+bssBANK0 1 20 20 14 1
+# %NOTES Section
+# This section contains data of all the note-psects.  The beginning of the section
+# is indicated by %NOTES. The first line indicates the name and decimal
+# byte-length of the first note-psect, e.g.
+#   $codecov_info_hdr 16
+# Each line that follows contains the byte-data of the psect in hexadecimal as a
+# space-separated list. These lines are limited to 16 bytes of data.
+%NOTES
