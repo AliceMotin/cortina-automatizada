@@ -1,3 +1,3 @@
-#TRABALHO FINAL#
+**TRABALHO FINAL**
 
-Projeto - Cortina Automatizada.
+Projeto - Cortina automatizada com sensor de luz.
